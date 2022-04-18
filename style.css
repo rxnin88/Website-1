@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Mono-Space;
+    src: url(/fonts/SpaceMono-Regular.ttf);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Mono-Space;
+    scroll-behavior: smooth;
+}
+
+.nav-menu li, a{
+    font-family: Mono-Space;
+    font-size : clamp(2vw, 2vw, 10vw);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    width: 102%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 5%;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo{
+    font-family: Mono-Space;
+    font-size : clamp(1.4vw, 2vw,10vw);
+    font-weight: bolder;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.4s ease 0s;
+}
+
+.logo:hover{
+    transform: skew(2deg, 2deg);
+    text-decoration: underline rgb(53, 0, 227);
+}
+
+.nav-menu{
+    list-style: none;
+}
+
+.nav-menu li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav-menu li a{
+    position: relative;
+    top: 0;
+    transition: all 0.4s ease 0s;
+    transition: top ease 0.4s;
+}
+
+.nav-menu li a:hover{
+    color: rgb(53, 0, 227);
+    text-decoration: underline;
+    top: -3px;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background: rgb(204, 204, 204);
+}
+
+
+/**                 SPLITTER                **/
+
+
+h1{
+    font-size : clamp(2.3vw, 3.4vw, 15vw);  
+    font-family: Mono-Space;
+    font-weight: bold;
+    transition: all 1s ease 0s;
+}
+
+h1 span{
+    transition: color 0.4s ease 0s;
+    white-space: nowrap;
+
+}
+
+.intro p{
+    font-size: clamp(2.2vw, 2.4vw, 3vw);
+}
+
+.intro{
+    padding-left: 5%;
+    padding-top: 20vh;
+}
+
+.bio{
+    padding-left: 5%;
+    padding-top: 9vw;
+}
+
+.work{
+    padding: 3%;
+    padding-top: 9vw;
+    padding-left: 5%;
+}
+
+.exp
+{
+    display: flex;
+    padding-top: 2%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.exp div p
+{
+    font-size: clamp(1.4vw, 1.2vw, 3vw);
+    width: 80%;
+}
+
+
+.bio p{
+    font-size: clamp(2.5vw, 1.6vw, 3vw);
+    width: 90%;
+}
+
+.cta{
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    font-size: clamp(1.3vw, 1.6vw, 3vw);
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    padding: 1vw 2.2vw;
+    transition: all 0.35s ease;
+}
+
+.cta:hover{
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(53, 0, 227);
+    color: rgb(53, 0, 227);
+    box-shadow: 4px 4px rgb(53, 0, 227);
+    
+}
+
+.about{
+    font-size: 1.5vw;
+}
+
+.title2
+{
+    padding-left: 2%;
+}
+
+.projets
+{
+    display: flex;
+    padding-top: 4%;
+}
+
+.box
+{
+    width: 80%;
+    height: 100%;
+    margin: 26px;
+    border-radius: 14px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.box:hover
+{
+    transform: rotate(-1.3deg);
+}
+
+footer p{
+    border-top: 2px solid rgb(194, 194, 194);
+    padding: 12px;
+    color: rgb(172, 172, 172);
+}
+
+
+.exp ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 3%;
+    padding-top: 2%;
+
+}
+
+.exp li {
+    width: 80%;
+    float: left;
+    margin: 5px;
+    font-size: clamp(1.5vw, 1.7vw, 3vw);
+}
+
+
+.exp h2 {
+    font-size: clamp(2.2vw, 2.4vw, 3vw);
+}
+
